@@ -3,10 +3,10 @@
 Summary:	Some utilities for use by drakfont
 Name:		font-tools
 Version:	0.1
-Release:	%mkrel 14
-License:	GPL & BSD
+Release:	%mkrel 15
+License:	GPLv2+ and BSD
 Group:		System/Configuration/Other
-Url: 		http://www.linux-mandrake.com
+Url: 		http://www.mandriva.com
 Source:		%{name}-%{version}.tar.bz2
 Source1:	http://download.sourceforge.net/ttf2pt1/ttf2pt1-%{ttf2pt1ver}.tar.bz2
 BuildRequires:	freetype-devel
@@ -14,9 +14,9 @@ Requires:	t1utils, freetype-tools, groff
 Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
-font-tools is used by drakfont and include:
+font-tools is used by drakfont and includes:
 - ttf2type1: convert .ttf to .pfb and .afm.
-- tt2afm:    convert .ttf to .afm .
+- tt2afm:    convert .ttf to .afm.
 - pfm2afm:   convert .pfm to afm.
 
 %prep
@@ -45,8 +45,7 @@ rm -f %{buildroot}%{_sbindir}/t1asm
 
 %files
 %defattr(644,root,root,755)
-%doc README COPYING README.ttf2pt1 COPYRIGHT.ttf2pt1
+%doc README README.ttf2pt1 COPYRIGHT.ttf2pt1
 %attr(755,root,root) %{_sbindir}/*
 %{_mandir}/man1/*
-
 
