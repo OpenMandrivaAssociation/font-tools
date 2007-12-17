@@ -11,7 +11,6 @@ Source:		%{name}-%{version}.tar.bz2
 Source1:	http://download.sourceforge.net/ttf2pt1/ttf2pt1-%{ttf2pt1ver}.tar.bz2
 BuildRequires:	freetype-devel
 Requires:	t1utils, freetype-tools, groff
-Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 font-tools is used by drakfont and includes:
