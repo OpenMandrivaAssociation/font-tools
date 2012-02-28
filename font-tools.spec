@@ -3,17 +3,16 @@
 Summary:	Some utilities for use by drakfont
 Name:		font-tools
 Version:	0.1
-Release:	%mkrel 22
+Release:	23
 License:	GPLv2+ and BSD
 Group:		System/Configuration/Other
 URL: 		http://www.mandriva.com
-Source:		%{name}-%{version}.tar.bz2
+Source0:	%{name}-%{version}.tar.bz2
 Source1:	http://download.sourceforge.net/ttf2pt1/ttf2pt1-%{ttf2pt1ver}.tgz
 BuildRequires:	freetype-devel = 1.3.1
 Requires:	t1utils
 Requires:	ttmkfdir
-Requires:	groff
-Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
+Requires:	groff-base >= 1.21-4
 
 %description
 font-tools is used by drakfont and includes:
@@ -44,11 +43,7 @@ install type1inst-0.6.1/type1inst.man %{buildroot}%{_mandir}/man1/type1inst.1
 
 rm -f %{buildroot}%{_sbindir}/t1asm
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(0644,root,root,0755)
 %doc README README.ttf2pt1 COPYRIGHT.ttf2pt1
-%attr(0755,root,root) %{_sbindir}/*
+%{_sbindir}/*
 %{_mandir}/man1/*
