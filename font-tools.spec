@@ -3,13 +3,13 @@
 Summary:	Some utilities for use by drakfont
 Name:		font-tools
 Version:	0.1
-Release:	%mkrel 24
+Release:	25
 License:	GPLv2+ and BSD
 Group:		System/Configuration/Other
 URL: 		http://www.mandriva.com
 Source:		%{name}-%{version}.tar.bz2
 Source1:	http://download.sourceforge.net/ttf2pt1/ttf2pt1-%{ttf2pt1ver}.tgz
-BuildRequires:	freetype-devel = 1.3.1
+BuildRequires:	freetype-devel
 Requires:	t1utils
 Requires:	ttmkfdir
 Requires:	groff
