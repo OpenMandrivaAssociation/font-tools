@@ -3,7 +3,7 @@
 Summary:	Some utilities for use by drakfont
 Name:		font-tools
 Version:	0.1
-Release:	27
+Release:	28
 License:	GPLv2+ and BSD
 Group:		System/Configuration/Other
 Url: 		http://www.mandriva.com
