@@ -6,7 +6,7 @@ Version:	0.1
 Release:	35
 License:	GPLv2+ and BSD
 Group:		System/Configuration/Other
-Url: 		http://www.mandriva.com
+Url: 		https://www.mandriva.com
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	http://download.sourceforge.net/ttf2pt1/ttf2pt1-%{ttf2pt1ver}.tgz
 BuildRequires:	freetype-devel
